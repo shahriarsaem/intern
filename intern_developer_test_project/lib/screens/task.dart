@@ -5,10 +5,16 @@ import 'package:intern_developer_test_project/screens/miniTask2.dart';
 
 import 'miniTask.dart';
 import 'dart:math' as math;
+import 'package:google_fonts/google_fonts.dart';
 
 class TaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var textStyle = TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+    );
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
@@ -18,10 +24,17 @@ class TaskScreen extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(36, 150, 109, 1),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(15.0),
                     bottomRight: Radius.circular(15.0),
+                  ),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color.fromARGB(255, 26, 137, 93),
+                      Color(0xff07463E)
+                    ],
                   ),
                 ),
                 padding: EdgeInsets.only(
@@ -39,7 +52,7 @@ class TaskScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   'Hi, Habib ',
-                                  style: TextStyle(
+                                  style: GoogleFonts.inter(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.white),
@@ -55,7 +68,7 @@ class TaskScreen extends StatelessWidget {
                             ),
                             Text(
                               "Let's explore your notes",
-                              style: TextStyle(
+                              style: GoogleFonts.inter(
                                 color: Colors.white,
                                 fontSize: 12.0,
                                 fontWeight: FontWeight.w400,
@@ -67,7 +80,7 @@ class TaskScreen extends StatelessWidget {
                           backgroundImage: NetworkImage(
                             'https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1768126784.jpg',
                           ),
-                          radius: 30.0,
+                          radius: 25.0,
                         ),
                       ],
                     ),
@@ -92,25 +105,21 @@ class TaskScreen extends StatelessWidget {
                                   children: [
                                     Text(
                                       'Welcome to TickTick Task',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                      ),
+                                      style: textStyle,
                                     ),
                                     SizedBox(
                                       height: 15.0,
                                     ),
                                     Text(
                                       "Your one-stop app for task management. Simplify,",
-                                      style: TextStyle(
+                                      style: GoogleFonts.inter(
                                           fontSize: 12,
                                           fontWeight: FontWeight.w400,
                                           color: Colors.white),
                                     ),
                                     Text(
                                       "track, and accomplish tasks with ease",
-                                      style: TextStyle(
+                                      style: GoogleFonts.inter(
                                           fontSize: 12,
                                           fontWeight: FontWeight.w400,
                                           color: Colors.white),
@@ -141,9 +150,9 @@ class TaskScreen extends StatelessWidget {
                                           ),
                                           Text(
                                             'Watch Video',
-                                            style: TextStyle(
+                                            style: GoogleFonts.inter(
                                               color: Colors.white,
-                                              fontSize: 12,
+                                              fontSize: 11,
                                               fontWeight: FontWeight.w500,
                                             ),
                                           ),
@@ -174,7 +183,7 @@ class TaskScreen extends StatelessWidget {
                         children: [
                           Text(
                             'Reminder Task',
-                            style: TextStyle(
+                            style: GoogleFonts.inter(
                               color: Colors.white,
                               fontWeight: FontWeight.w600,
                               fontSize: 14,
@@ -182,7 +191,7 @@ class TaskScreen extends StatelessWidget {
                           ),
                           Text(
                             'See all',
-                            style: TextStyle(
+                            style: GoogleFonts.inter(
                               color: Colors.white,
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
@@ -229,7 +238,7 @@ class TaskScreen extends StatelessWidget {
               children: [
                 Text(
                   'All Tasks',
-                  style: TextStyle(
+                  style: GoogleFonts.inter(
                     color: Colors.black,
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
@@ -237,7 +246,7 @@ class TaskScreen extends StatelessWidget {
                 ),
                 Text(
                   'See all',
-                  style: TextStyle(
+                  style: GoogleFonts.inter(
                     color: Colors.black,
                     fontWeight: FontWeight.w400,
                     fontSize: 12,

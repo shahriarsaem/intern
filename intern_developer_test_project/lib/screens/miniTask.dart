@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MiniTask extends StatelessWidget {
   const MiniTask({required this.taskColor, required this.taskText});
@@ -34,7 +35,7 @@ class MiniTask extends StatelessWidget {
               ),
               child: Text(
                 '${taskText}',
-                style: TextStyle(
+                style: GoogleFonts.inter(
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
                 ),
@@ -42,7 +43,7 @@ class MiniTask extends StatelessWidget {
             ),
             Text(
               'Save Date: 10/12/2022',
-              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w400),
+              style: GoogleFonts.inter(fontSize: 10, fontWeight: FontWeight.w400),
             ),
           ],
         ),

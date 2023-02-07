@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MiniTask2 extends StatelessWidget {
   const MiniTask2({super.key});
@@ -34,7 +35,7 @@ class MiniTask2 extends StatelessWidget {
                       const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 15),
                   child: Text(
                     'Online Class Routine',
-                    style: TextStyle(
+                    style: GoogleFonts.inter(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
                     ),
@@ -42,7 +43,7 @@ class MiniTask2 extends StatelessWidget {
                 ),
                 Text(
                   'Save Date: 10/12/2022',
-                  style: TextStyle(fontSize: 10, fontWeight: FontWeight.w400),
+                  style: GoogleFonts.inter(fontSize: 10, fontWeight: FontWeight.w400),
                 ),
               ],
             )

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:intern_developer_test_project/screens/task.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TabBarDemo extends StatefulWidget {
   const TabBarDemo({super.key});
@@ -24,6 +25,9 @@ class _TabBarDemoState extends State<TabBarDemo> {
     return Scaffold(
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+          showSelectedLabels: true,
+          showUnselectedLabels: false,
+          type: BottomNavigationBarType.fixed,
           iconSize: 30,
           currentIndex: currentIndex,
           onTap: (value) {
