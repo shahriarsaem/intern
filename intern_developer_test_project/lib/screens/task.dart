@@ -105,7 +105,10 @@ class TaskScreen extends StatelessWidget {
                                   children: [
                                     Text(
                                       'Welcome to TickTick Task',
-                                      style: textStyle,
+                                      style: GoogleFonts.inter(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white),
                                     ),
                                     SizedBox(
                                       height: 15.0,
